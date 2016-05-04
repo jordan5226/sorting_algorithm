@@ -18,7 +18,7 @@ void swapNode(T& a, T& b)
 }
 
 
-template <class T>
+template <typename T>
 bool ascending(T a, T b)
 {
 	if(a > b)
@@ -27,7 +27,7 @@ bool ascending(T a, T b)
 }
 
 
-template <class T>
+template <typename T>
 bool descending(T a, T b)
 {
 	if(a < b)
@@ -35,7 +35,7 @@ bool descending(T a, T b)
 	return false;
 }
 
-template <class T>
+template <typename T>
 void printArray(T *arr)
 {
 	cout<<"Array: ";
@@ -54,7 +54,7 @@ void printArray(T *arr)
  *  int len : heap tree大小 
  *  bool (*compare)(T a, T b) : 比較大小之函數指針，用來決定此堆積樹為Max Heap或Min Heap 
  */
-template <class T>
+template <typename T>
 void heapifyRoot(T *arr, int cmpNode, int len, bool (*comp)(T, T))
 {
 	int root;
@@ -79,7 +79,7 @@ void heapifyRoot(T *arr, int cmpNode, int len, bool (*comp)(T, T))
  *  int len : heap tree大小 
  *  bool (*compare)(T a, T b) : 比較大小之函數指針，用來決定此堆積樹為Max Heap或Min Heap 
  */
-template <class T>
+template <typename T>
 void buildHeapTree(T *arr, int len, bool (*comp)(T, T))
 {
 	for(int i=(len/2)-1;i>=0;--i)
@@ -95,7 +95,7 @@ void buildHeapTree(T *arr, int len, bool (*comp)(T, T))
  *  int len : heap tree大小
  *  bool (*Compare)(int a, int b) : 比較大小之函數指針，用來決定此堆積樹為Max Heap或Min Heap 
  */
-template <class T>
+template <typename T>
 void heapSort(T *arr, int len, bool (*comp)(T, T))
 {
 	while(len>1)

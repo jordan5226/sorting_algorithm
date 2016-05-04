@@ -7,14 +7,14 @@ Insertion Sort
 using namespace std;
 #define LENGTH_ARR 10
 
-template <class T>
+template <typename T>
 void PrintArr(T* arr, int length)
 {
 	for(int i=0;i<length;i++)
 		cout<<arr[i]<<" ";
 }
 
-template <class T>
+template <typename T>
 void InsertionSort(T* arr, int length)
 {
 	int lastSortedIdx=0; // mark first element as sorted
