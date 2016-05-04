@@ -9,7 +9,7 @@ using namespace std;
 #define ARR_LEN 10
 
 
-template <class T>
+template <typename T>
 void swapNode(T& a, T& b)
 {
 	T tmp(a);
